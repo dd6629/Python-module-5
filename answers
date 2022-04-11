@@ -1,0 +1,25 @@
+#part-b 
+#1
+class coordinates:
+    def __init__(self):
+        self.x1,self.x2=map(float,input("Enter x coordinates:").split())
+        self.y1,self.y2=map(float,input("Enter y coordinates:").split())
+        print(self.x1,self.x2)
+        print(self.y1,self.y2)
+    def display(self):
+        print("The midpoint is :",((self.x1+self.x2)/2),(self.y1+self.y2)/2)
+mid=coordinates()
+mid.display()
+
+#2
+class numbers:
+    def __init__(self):
+        self.lst=[int(i) for i in input("Enter numbers:").split()]
+        self.max=max(self.lst)
+    def display(self):
+        print("The maximum in list:",self.max)
+maximum=numbers()
+maximum.display()
+
+#3
+class student:
