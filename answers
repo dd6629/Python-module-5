@@ -23,3 +23,63 @@ maximum.display()
 
 #3
 class student:
+    def __init__(self):
+        self.name=input("Enter name:")
+        self.roll=input("Enter rollno:")
+        self.m1,self.m2,self.m3=map(int,input("Enter 3 subjects marks:").split())
+        self.marks=self.m1+self.m2+self.m3
+    def display(self):
+        print("Name:{}\nRoll number:{}\nTotal marks:{}".format(self.name,self.roll,self.marks))
+s=student()
+s.display()
+
+#4
+class rectangle:
+    def __init__(self):
+        self.length=int(input("Enter length:"))
+        self.breadth=int(input("Enter breadth:"))
+    def area(self):
+        self.area=self.length*self.breadth
+        print("The area of rectangle is:",self.area)
+r=rectangle()
+r.area()
+
+#5
+class employee:
+    n=int(input("Enter how many employees:"))
+    def __init__(self):
+        for self.i in range(self.n):
+            self.name=input("Enter your name:")
+            self.designation=input("Enter your designation:")
+            self.salary=int(input("Enter your salary:"))
+            print('Name:{}\nDesignation:{}\nSalary:{}\n'.format(self.name,self.designation,self.salary))
+e=employee()
+
+#7
+import math
+class circle:
+    pi=math.pi
+    def area(self):
+        self.radius=int(input("Enter the radius:"))
+        self.area=self.pi*self.radius**2
+        print("Area:",self.area)
+    def circumference(self):
+        self.circumference=2*self.pi*self.radius
+        print("circumference:",self.circumference)
+c=circle()
+c.area()
+c.circumference()
+
+#8
+class student:
+    def __init__(self):
+        self.name=input("Enter name:")
+        self.m1,self.m2,self.m3=map(int,input("Enter three subjects marks:").split())
+        self.marks=[self.m1,self.m2,self.m3]
+    def display(self):
+        print(self.name)
+        print(self.marks)
+
+s=student()
+s.display()
+
